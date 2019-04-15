@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="{%static "css/style.css"%}">
+	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+
+		<h1> Rock Paper cissors </h1>
+
+	</header>
+
+	<div class="scoreBoard">
+
+		<span class="Badge" id="User">user</span>
+		<span id="userScore">0</span>:<span id="compScore">0</span>
+		<span class="Badge" id="Comp">Comp</span>
+
+	</div>
+
+	<div id="message"> Message</div>
+	<div class="choices">
+		<div id="r" class="choice">
+			<img src="{%static "image/rock.png"%}">
+		</div>
+		<div id="p" class="choice">
+			<img src="{%static "image/paper.png"%}">
+		</div>
+		<div id="s" class="choice">
+			<img src="{%static "image/scessior.png"%}">
+		</div>
+	</div>
+
+	<p id="action-message"> Make your Move</p>
+
+	<script type="text/javascript" src="{% static "/javascript/javaScript.js" %}"></script>
+
+</body>
+</html>
+</body>
+</html>
